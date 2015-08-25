@@ -28,6 +28,5 @@ class SettingsViewController: UIViewController {
     }
     @IBAction func onTipControlChanged(sender: AnyObject) {
         tipDefaults.setDefaultTipAmountIndex(tipControl.selectedSegmentIndex)
-        // TODO: consider updating main view's index too?
     }
 }
