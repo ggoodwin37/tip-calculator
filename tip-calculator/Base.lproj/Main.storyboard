@@ -71,6 +71,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="1xp-My-3mC" id="SqJ-ki-Gv8"/>
+                        <outlet property="tipLabel" destination="zsU-c1-Efb" id="K9R-3E-ovU"/>
+                        <outlet property="totalLabel" destination="6Mz-3W-ZjG" id="e8d-or-4v9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
