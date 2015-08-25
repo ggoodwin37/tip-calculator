@@ -9,20 +9,29 @@
 import Foundation
 
 class tipDefaults {
+    private class func getDefaults() -> NSUserDefaults {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        return defaults
+    }
+    class func register() {
+        let defaults: [String:AnyObject] = ["default_tip_amount_segment": 1]
+        tipDefaults.getDefaults().registerDefaults(defaults)
+    }
     class func defaultTipAmountIndexExists() -> Bool {
         let key = "default_tip_amount_segment"
-        let defaults = NSUserDefaults.standardUserDefaults()
-        return (defaults.dataForKey(key) != nil)
+        return (tipDefaults.getDefaults().dataForKey(key) != nil)
     }
     class func getDefaultTipAmountIndex() -> Int {
         let key = "default_tip_amount_segment"
-        let defaults = NSUserDefaults.standardUserDefaults()
-        return defaults.integerForKey(key)
+        return tipDefaults.getDefaults().integerForKey(key)
     }
     class func setDefaultTipAmountIndex(index: Int) {
         let key = "default_tip_amount_segment"
-        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = tipDefaults.getDefaults()
         defaults.setInteger(index, forKey: key)
         defaults.synchronize()
+        print("tipDefaults set default to \(index)")
+        let foo = defaults.dataForKey(key)
+        print("foo is \(foo)")
     }
 }

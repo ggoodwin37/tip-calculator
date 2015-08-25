@@ -15,6 +15,15 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        var defaultIndex = 1;
+        if (tipDefaults.defaultTipAmountIndexExists()) {
+            defaultIndex = tipDefaults.getDefaultTipAmountIndex()
+        } else {
+            print("resetting stored default?")
+            tipDefaults.setDefaultTipAmountIndex(defaultIndex)
+        }
+        print("Settings view using default \(defaultIndex)")
+        tipControl.selectedSegmentIndex = defaultIndex
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +35,7 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func onTipControlChanged(sender: AnyObject) {
-        let foo = tipControl.selectedSegmentIndex
-        print("\(foo)")
+        tipDefaults.setDefaultTipAmountIndex(tipControl.selectedSegmentIndex)
+        // TODO: consider updating main view's index too?
     }
 }
