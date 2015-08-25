@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         tipControl.selectedSegmentIndex = tipDefaults.getDefaultTipAmountIndex()
+        self.onEditingChanged(self)
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
