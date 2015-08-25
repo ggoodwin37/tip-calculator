@@ -17,10 +17,6 @@ class tipDefaults {
         let defaults: [String:AnyObject] = ["default_tip_amount_segment": 1]
         tipDefaults.getDefaults().registerDefaults(defaults)
     }
-    class func defaultTipAmountIndexExists() -> Bool {
-        let key = "default_tip_amount_segment"
-        return (tipDefaults.getDefaults().dataForKey(key) != nil)
-    }
     class func getDefaultTipAmountIndex() -> Int {
         let key = "default_tip_amount_segment"
         return tipDefaults.getDefaults().integerForKey(key)
@@ -30,8 +26,5 @@ class tipDefaults {
         let defaults = tipDefaults.getDefaults()
         defaults.setInteger(index, forKey: key)
         defaults.synchronize()
-        print("tipDefaults set default to \(index)")
-        let foo = defaults.dataForKey(key)
-        print("foo is \(foo)")
     }
 }

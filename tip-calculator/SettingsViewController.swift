@@ -14,16 +14,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var defaultIndex = 1;
-        if (tipDefaults.defaultTipAmountIndexExists()) {
-            defaultIndex = tipDefaults.getDefaultTipAmountIndex()
-        } else {
-            print("resetting stored default?")
-            tipDefaults.setDefaultTipAmountIndex(defaultIndex)
-        }
-        print("Settings view using default \(defaultIndex)")
-        tipControl.selectedSegmentIndex = defaultIndex
+
+        tipControl.selectedSegmentIndex = tipDefaults.getDefaultTipAmountIndex()
     }
 
     override func didReceiveMemoryWarning() {

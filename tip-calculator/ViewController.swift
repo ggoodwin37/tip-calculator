@@ -20,12 +20,7 @@ class ViewController: UIViewController {
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
 
-        tipDefaults.register()
-        var defaultIndex = 1;
-        if (tipDefaults.defaultTipAmountIndexExists()) {
-            defaultIndex = tipDefaults.getDefaultTipAmountIndex()
-        }
-        tipControl.selectedSegmentIndex = defaultIndex
+        tipControl.selectedSegmentIndex = tipDefaults.getDefaultTipAmountIndex()
     }
 
     override func didReceiveMemoryWarning() {
