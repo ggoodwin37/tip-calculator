@@ -81,6 +81,7 @@
                             <outletCollection property="gestureRecognizers" destination="08F-LO-ANF" appends="YES" id="HFr-cf-yEZ"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="YY3-bf-TJo"/>
                     <connections>
                         <outlet property="billAmountTextField" destination="1xp-My-3mC" id="SqJ-ki-Gv8"/>
                         <outlet property="tipControl" destination="riB-TU-761" id="Sze-Ov-44F"/>
@@ -95,7 +96,25 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="295" y="572"/>
+            <point key="canvasLocation" x="841" y="681"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pKB-7a-KbR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zb9-95-DIm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SOc-x1-WJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IEO-W5-JhN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw1-lH-Wei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="699"/>
         </scene>
     </scenes>
 </document>
