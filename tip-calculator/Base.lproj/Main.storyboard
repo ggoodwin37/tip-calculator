@@ -107,8 +107,8 @@
         <!--Settings-->
         <scene sceneID="Qvy-Ft-ilX">
             <objects>
-                <viewController title="Settings" id="SNM-Pb-T9I" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GG7-Xc-LuV">
+                <viewController title="Settings" id="SNM-Pb-T9I" customClass="SettingsViewController" customModule="tip_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GG7-Xc-LuV" customClass="Settt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -119,6 +119,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KRo-kL-TDk">
+                                <rect key="frame" x="25" y="20" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="onTouchUpInside:" destination="SNM-Pb-T9I" eventType="touchUpInside" id="Uaz-5V-TVg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
