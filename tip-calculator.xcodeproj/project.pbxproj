@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30DAF2C1B8C21CD00751317 /* tipDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30DAF2B1B8C21CD00751317 /* tipDefaults.swift */; settings = {ASSET_TAGS = (); }; };
 		F33F53331B8C06BB0090E5ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F53321B8C06BB0090E5ED /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F3B69CE91B8BEB99003CF25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B69CE81B8BEB99003CF25B /* AppDelegate.swift */; };
 		F3B69CEB1B8BEB99003CF25B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B69CEA1B8BEB99003CF25B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30DAF2B1B8C21CD00751317 /* tipDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipDefaults.swift; sourceTree = "<group>"; };
 		F33F53321B8C06BB0090E5ED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F3B69CE51B8BEB99003CF25B /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B69CE81B8BEB99003CF25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F3B69CEF1B8BEB99003CF25B /* Assets.xcassets */,
 				F3B69CF11B8BEB99003CF25B /* LaunchScreen.storyboard */,
 				F3B69CF41B8BEB99003CF25B /* Info.plist */,
+				F30DAF2B1B8C21CD00751317 /* tipDefaults.swift */,
 			);
 			path = "tip-calculator";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B69CEB1B8BEB99003CF25B /* ViewController.swift in Sources */,
+				F30DAF2C1B8C21CD00751317 /* tipDefaults.swift in Sources */,
 				F3B69CE91B8BEB99003CF25B /* AppDelegate.swift in Sources */,
 				F33F53331B8C06BB0090E5ED /* SettingsViewController.swift in Sources */,
 			);

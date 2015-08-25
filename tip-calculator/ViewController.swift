@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        if (tipDefaults.defaultTipAmountIndexExists()) {
+            print("it exists")
+        } else {
+            print("it don't exist")
+        }
     }
 
     override func didReceiveMemoryWarning() {
